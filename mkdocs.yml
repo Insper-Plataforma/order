@@ -1,0 +1,9 @@
+site_name: "Documentação Order"
+theme:
+  name: material
+
+nav:
+  - Introdução: index.md
+  - Entidades: entidades.md
+  - Endpoints: endpoints.md
+  - Setup: setup.md
