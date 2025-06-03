@@ -1,6 +1,17 @@
-# Entidades
+# Estrutura de pastas
 
-## `OrderIn`
+```bash
+src/main/java/store/order/
+├── OrderController.java  # Interface Feign
+├── OrderIn.java          # DTO de entrada
+├── OrderOut.java         # DTO de saída
+├── OrderItemIn.java      # DTO de entrada
+└── OrderItemOut.java     # DTO de saída
+```
+
+---
+
+## OrderIn
 
 Representa um pedido de entrada.
 
@@ -12,7 +23,9 @@ record OrderIn(
 
 - `items`: Lista de itens do pedido.
 
-## `OrderItemIn`
+---
+
+## OrderItemIn
 
 Item individual do pedido de entrada.
 
@@ -26,7 +39,9 @@ record OrderItemIn(
 - `idProduct`: ID do produto.
 - `quantity`: Quantidade do produto.
 
-## `OrderOut`
+---
+
+## OrderOut
 
 Retorno completo de um pedido.
 
@@ -44,7 +59,9 @@ record OrderOut(
 - `items`: Lista de itens do pedido.
 - `total`: Valor total do pedido.
 
-## `OrderItemOut`
+---
+
+## OrderItemOut
 
 Item do pedido com informações do produto.
 

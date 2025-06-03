@@ -1,6 +1,10 @@
-## Endpoints
+# Endpoints - Feign Interface `OrderController`
 
-### `POST /order`
+Todos os endpoints se referem ao microsserviço `order` com base URL: `http://order:8080`.
+
+---
+
+### POST `/order`
 
 Cria um novo pedido para o usuário autenticado.
 
@@ -10,7 +14,7 @@ Cria um novo pedido para o usuário autenticado.
 
 ---
 
-### `GET /order`
+### GET `/order`
 
 Retorna todos os pedidos da base.
 
@@ -18,7 +22,7 @@ Retorna todos os pedidos da base.
 
 ---
 
-### `GET /order/{idOrder}`
+### GET `/order/{idOrder}`
 
 Busca os detalhes de um pedido específico.
 

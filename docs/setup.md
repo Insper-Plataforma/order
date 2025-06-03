@@ -1,6 +1,14 @@
-# Setup e Execução - Interface Order
+# Setup e dependências
 
-Esse módulo define apenas a **interface REST `OrderController`** e os DTOs relacionados.
+Este módulo define apenas a **interface REST `OrderController`** e os DTOs relacionados.
+
+---
+
+## Como compilar
+
+```bash
+mvn clean install
+```
 
 ---
 
@@ -30,16 +38,6 @@ Essa interface deve ser **importada** e **implementada por um serviço** como o 
 public interface OrderController {
     // ...
 }
-```
-
----
-
-## Como compilar
-
-Para compilar o projeto, execute o seguinte comando na raiz do projeto:
-
-```bash
-mvn clean install
 ```
 
 ---
