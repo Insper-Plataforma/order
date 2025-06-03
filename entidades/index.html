@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../endpoints/">
       
       
-        <link rel="next" href="../endpoints/">
+        <link rel="next" href="../setup/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Entidades - Documentação Order</title>
+        <title>Estrutura - Documentação Order</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entidades" class="md-skip">
+        <a href="#estrutura-de-pastas" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entidades
+              Estrutura
             
           </span>
         </div>
@@ -199,7 +199,29 @@
   
   
   <span class="md-ellipsis">
-    Introdução
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../endpoints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Endpoints
     
   </span>
   
@@ -230,7 +252,7 @@
   
   
   <span class="md-ellipsis">
-    Entidades
+    Estrutura
     
   </span>
   
@@ -243,7 +265,7 @@
   
   
   <span class="md-ellipsis">
-    Entidades
+    Estrutura
     
   </span>
   
@@ -305,28 +327,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../endpoints/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Endpoints
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -431,8 +431,16 @@
 
 
 
-<h1 id="entidades">Entidades</h1>
-<h2 id="orderin"><code>OrderIn</code></h2>
+<h1 id="estrutura-de-pastas">Estrutura de pastas</h1>
+<pre><code class="language-bash">src/main/java/store/order/
+├── OrderController.java  # Interface Feign
+├── OrderIn.java          # DTO de entrada
+├── OrderOut.java         # DTO de saída
+├── OrderItemIn.java      # DTO de entrada
+└── OrderItemOut.java     # DTO de saída
+</code></pre>
+<hr />
+<h2 id="orderin">OrderIn</h2>
 <p>Representa um pedido de entrada.</p>
 <pre><code class="language-java">record OrderIn(
     List&lt;OrderItemIn&gt; items
@@ -441,7 +449,8 @@
 <ul>
 <li><code>items</code>: Lista de itens do pedido.</li>
 </ul>
-<h2 id="orderitemin"><code>OrderItemIn</code></h2>
+<hr />
+<h2 id="orderitemin">OrderItemIn</h2>
 <p>Item individual do pedido de entrada.</p>
 <pre><code class="language-java">record OrderItemIn(
     String idProduct,
@@ -452,7 +461,8 @@
 <li><code>idProduct</code>: ID do produto.</li>
 <li><code>quantity</code>: Quantidade do produto.</li>
 </ul>
-<h2 id="orderout"><code>OrderOut</code></h2>
+<hr />
+<h2 id="orderout">OrderOut</h2>
 <p>Retorno completo de um pedido.</p>
 <pre><code class="language-java">record OrderOut(
     String id,
@@ -467,7 +477,8 @@
 <li><code>items</code>: Lista de itens do pedido.</li>
 <li><code>total</code>: Valor total do pedido.</li>
 </ul>
-<h2 id="orderitemout"><code>OrderItemOut</code></h2>
+<hr />
+<h2 id="orderitemout">OrderItemOut</h2>
 <p>Item do pedido com informações do produto.</p>
 <pre><code class="language-java">record OrderItemOut(
     ProductOut product,

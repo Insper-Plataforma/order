@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../entidades/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../setup/">
+        <link rel="next" href="../entidades/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#endpoints" class="md-skip">
+        <a href="#endpoints-feign-interface-ordercontroller" class="md-skip">
           Skip to content
         </a>
       
@@ -199,29 +199,7 @@
   
   
   <span class="md-ellipsis">
-    Introdução
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../entidades/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Entidades
+    Início
     
   </span>
   
@@ -243,6 +221,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -276,6 +256,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -284,16 +266,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoints
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#post-order" class="md-nav__link">
     <span class="md-ellipsis">
       POST /order
@@ -301,8 +273,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#get-order" class="md-nav__link">
     <span class="md-ellipsis">
       GET /order
@@ -310,8 +282,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#get-orderidorder" class="md-nav__link">
     <span class="md-ellipsis">
       GET /order/{idOrder}
@@ -319,16 +291,33 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estrutura
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -372,6 +361,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -380,16 +371,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoints
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#post-order" class="md-nav__link">
     <span class="md-ellipsis">
       POST /order
@@ -397,8 +378,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#get-order" class="md-nav__link">
     <span class="md-ellipsis">
       GET /order
@@ -406,18 +387,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#get-orderidorder" class="md-nav__link">
     <span class="md-ellipsis">
       GET /order/{idOrder}
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -437,10 +413,10 @@
 
 
 
-  <h1>Endpoints</h1>
-
-<h2 id="endpoints">Endpoints</h2>
-<h3 id="post-order"><code>POST /order</code></h3>
+<h1 id="endpoints-feign-interface-ordercontroller">Endpoints - Feign Interface <code>OrderController</code></h1>
+<p>Todos os endpoints se referem ao microsserviço <code>order</code> com base URL: <code>http://order:8080</code>.</p>
+<hr />
+<h3 id="post-order">POST <code>/order</code></h3>
 <p>Cria um novo pedido para o usuário autenticado.</p>
 <ul>
 <li><strong>Request body</strong>: <a href="../entidades/#orderin"><code>OrderIn</code></a></li>
@@ -448,13 +424,13 @@
 <li><strong>Response</strong>: <a href="../entidades/#orderout"><code>OrderOut</code></a></li>
 </ul>
 <hr />
-<h3 id="get-order"><code>GET /order</code></h3>
+<h3 id="get-order">GET <code>/order</code></h3>
 <p>Retorna todos os pedidos da base.</p>
 <ul>
 <li><strong>Response</strong>: <code>List&lt;OrderOut&gt;</code></li>
 </ul>
 <hr />
-<h3 id="get-orderidorder"><code>GET /order/{idOrder}</code></h3>
+<h3 id="get-orderidorder">GET <code>/order/{idOrder}</code></h3>
 <p>Busca os detalhes de um pedido específico.</p>
 <ul>
 <li><strong>Path param</strong>: <code>idOrder</code></li>

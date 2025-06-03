@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../endpoints/">
+        <link rel="prev" href="../entidades/">
       
       
       
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-e-execucao-interface-order" class="md-skip">
+        <a href="#setup-e-dependencias" class="md-skip">
           Skip to content
         </a>
       
@@ -197,29 +197,7 @@
   
   
   <span class="md-ellipsis">
-    Introdução
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../entidades/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Entidades
+    Início
     
   </span>
   
@@ -242,6 +220,28 @@
   
   <span class="md-ellipsis">
     Endpoints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estrutura
     
   </span>
   
@@ -308,6 +308,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#como-compilar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como compilar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requisitos" class="md-nav__link">
     <span class="md-ellipsis">
       Requisitos
@@ -329,15 +338,6 @@
   <a href="#como-usar" class="md-nav__link">
     <span class="md-ellipsis">
       Como usar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-compilar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como compilar
     </span>
   </a>
   
@@ -387,6 +387,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#como-compilar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como compilar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requisitos" class="md-nav__link">
     <span class="md-ellipsis">
       Requisitos
@@ -408,15 +417,6 @@
   <a href="#como-usar" class="md-nav__link">
     <span class="md-ellipsis">
       Como usar
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-compilar" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como compilar
     </span>
   </a>
   
@@ -447,8 +447,12 @@
 
 
 
-<h1 id="setup-e-execucao-interface-order">Setup e Execução - Interface Order</h1>
-<p>Esse módulo define apenas a <strong>interface REST <code>OrderController</code></strong> e os DTOs relacionados.</p>
+<h1 id="setup-e-dependencias">Setup e dependências</h1>
+<p>Este módulo define apenas a <strong>interface REST <code>OrderController</code></strong> e os DTOs relacionados.</p>
+<hr />
+<h2 id="como-compilar">Como compilar</h2>
+<pre><code class="language-bash">mvn clean install
+</code></pre>
 <hr />
 <h2 id="requisitos">Requisitos</h2>
 <ul>
@@ -471,11 +475,6 @@
 public interface OrderController {
     // ...
 }
-</code></pre>
-<hr />
-<h2 id="como-compilar">Como compilar</h2>
-<p>Para compilar o projeto, execute o seguinte comando na raiz do projeto:</p>
-<pre><code class="language-bash">mvn clean install
 </code></pre>
 <hr />
 <h2 id="observacoes">Observações</h2>
